@@ -29,13 +29,13 @@ let
 in
 with py.pkgs; buildPythonApplication rec {
   pname = "awscli2";
-  version = "2.5.6"; # N.B: if you change this, check if overrides are still up-to-date
+  version = "2.7.0"; # N.B: if you change this, check if overrides are still up-to-date
 
   src = fetchFromGitHub {
     owner = "aws";
     repo = "aws-cli";
     rev = version;
-    sha256 = "sha256-NANdm2RK4U5sXPuGbC8KUGXsbYl/WwAoUep4JxJA5lI=";
+    sha256 = "sha256-y+vvSmfew73tkce3O+FtoTIcHygzBIAgZa5VWiYYUuQ=";
   };
 
   propagatedBuildInputs = [
